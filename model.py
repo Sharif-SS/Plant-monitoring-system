@@ -1,3 +1,5 @@
+#This will be running on server while it's connected to the plant
+
 #for the mongodb interaction
 import pymongo
 from pymongo import MongoClient
@@ -7,7 +9,7 @@ from time import sleep
 from gpiozero import InputDevice
 
 #connecting to mongodb atlas
-cluster = MongoCLient("mongodb+srv://MUN:1234@planecrash111.lvgp1.mongodb.net/plantDataDB?retryWrites=true&w=majority")
+cluster = MongoCLient("mongodb+srv://snip:snip@planecrash111.lvgp1.mongodb.net/plantDataDB?retryWrites=true&w=majority")
 db=cluster["test"]
 collection = db["plantDataDB"]
 
